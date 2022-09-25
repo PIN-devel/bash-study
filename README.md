@@ -51,3 +51,30 @@ bash script study
 
 - -i: treat as integer
 - -a: treat as array
+
+## if 문
+
+```sh
+if test-commands; then
+...
+elif test-commands; then
+...
+fi
+```
+
+#### test-commands의 형태
+
+[...]: 기본
+
+[[...]]: bash extention
+
+((...)): bash extention
+
+#### Integer 비교
+
+- -eq: is equal to
+- -ne: is not equal to
+- -gt: is greater than
+- -ge: is greater than or equal to
+- -lt: is less than
+- -le: is less than or equal to
