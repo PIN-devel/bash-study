@@ -64,11 +64,11 @@ fi
 
 #### test-commands의 형태
 
-[...]: 기본
+-     \[...]: 기본
 
-[[...]]: bash extention
+- [[...]]: bash extention
 
-((...)): bash extention
+- ((...)): bash extention
 
 #### Integer 비교
 
@@ -78,3 +78,33 @@ fi
 - -ge: is greater than or equal to
 - -lt: is less than
 - -le: is less than or equal to
+
+#### String 비교
+
+- =: is equal to
+- ==: is equal to
+- !=: is not equal to
+- \<: is greater than
+- <: is greater than or equal to
+  - \[...] 형식에서는 \\<, \\> 사용
+  - \[[...]] 형식에서는 \<, \> 사용
+  - Locale에 따라 알파벳 순서가 다르다.
+- -z: is null
+- -n: is not null
+  - ""는 null
+  - 설정되지 않은 변수는 null
+
+#### File
+
+- -e: 파일 존재하는가
+- -f: refular file 인가
+- -d: directory 인가
+- -b: block device file 인가
+- -c: character device file 인가
+- -L: symvolic link file 인가
+- -r, -w, -x: 읽기, 쓰기, 실행 권한이 있는가
+
+#### AND, OR
+
+- AND: -a, [ expr ] && [ expr ], [[expr && expr]]
+- OR: -a, [ expr ] || [ expr ], [[expr || expr]]
